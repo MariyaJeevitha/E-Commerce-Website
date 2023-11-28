@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+#login1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Login\ img.webp);
+    background-size:cover;
+   
+}
+
+form{
+    width: 25rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(255,255,255,0.06);
+    box-shadow: 0 8px 32px 0 rgb(31,38,135,.37);
+    border-radius: 30px;
+    border-left:1px solid rgba(255, 255, 255, 3);
+    border-top:1px solid rgba(255, 255, 255, 3);
+}
+h1{
+    font-size: 35px;
+    text-align: center;
+    letter-spacing:3px;
+    padding:20px;
+}
+label{
+    font-size: 20px;
+    margin-left: 20px;
+}
+input{
+    width: 80%;
+    height:30px;
+    margin: 5% auto;
+    margin-bottom: 8%;
+    border: none;
+    outline: none;
+    background:transparent;
+    border-bottom: 1px solid rgba(255, 255, 255,0.6);
+}
+button{
+    width: 50%;
+    margin: 10px auto;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius:15px;
+    background:rgba(255, 255, 255,0.6);
+    border: none;
+    outline: none;
+    box-shadow: 3px 3px 5px rgb(31,38,135,.37);
+    border-left: 1px solid rgba(255, 255, 255,.3);
+    border-top: 1px solid rgba(255, 255, 255,.3);
+}
+a{
+    font-size: 17px;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    background:black;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    text-size: 16px;
+    font-weight: 600;
+    color:rgb(214, 166, 21);
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:white;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content:" ";
+    width: 30%;
+    height: 2px;
+    background-color:whitesmoke;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
